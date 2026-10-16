@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>JavaScript Keywords</title>
+<style>
+  body { font: 16px/1.6 system-ui, -apple-system, Segoe UI, sans-serif;
+         max-width: 820px; margin: 2rem auto; padding: 0 1rem; color: #1a1a1a; }
+  h1 { font-size: 1.4rem; border-bottom: 2px solid #eee; padding-bottom: .4rem; }
+  h2 { font-size: 1.1rem; margin-top: 1.8rem; }
+  code { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; background: #f6f8fa; padding: .1rem .35rem; border-radius: 4px; }
+  table { border-collapse: collapse; width: 100%; }
+  th, td { border: 1px solid #ddd; padding: .5rem .75rem; text-align: left; vertical-align: top; }
+  th { background: #f6f8fa; }
+  .note { color: #555; font-size: .95rem; }
+</style>
+</head>
+<body>
+<h1>JavaScript Keywords</h1>
+
+<h2>1. Reserved keywords (ES2015+)</h2>
+<p class="note">You can't use these as variable or function names.</p>
+<table>
+<tr><th>Keyword</th><th>Purpose</th></tr>
+<tr><td><code>break</code></td><td>Exit a loop or switch</td></tr>
+<tr><td><code>case</code></td><td>Branch inside a switch</td></tr>
+<tr><td><code>catch</code></td><td>Handle an error from try</td></tr>
+<tr><td><code>class</code></td><td>Declare a class</td></tr>
+<tr><td><code>const</code></td><td>Declare a block-scoped constant</td></tr>
+<tr><td><code>continue</code></td><td>Skip to the next loop iteration</td></tr>
+<tr><td><code>debugger</code></td><td>Pause execution in the debugger</td></tr>
+<tr><td><code>default</code></td><td>Fallback branch in a switch; default export</td></tr>
+<tr><td><code>delete</code></td><td>Remove a property from an object</td></tr>
+<tr><td><code>do</code></td><td>Start a do...while loop</td></tr>
+<tr><td><code>else</code></td><td>Alternate branch of if</td></tr>
+<tr><td><code>export</code></td><td>Export from a module</td></tr>
+<tr><td><code>extends</code></td><td>Inherit from a class</td></tr>
+<tr><td><code>false</code></td><td>Boolean literal</td></tr>
+<tr><td><code>finally</code></td><td>Run after try/catch no matter what</td></tr>
+<tr><td><code>for</code></td><td>Loop (for, for...in, for...of)</td></tr>
+<tr><td><code>function</code></td><td>Declare a function</td></tr>
+<tr><td><code>if</code></td><td>Conditional branch</td></tr>
+<tr><td><code>import</code></td><td>Import from a module</td></tr>
+<tr><td><code>in</code></td><td>Check property exists; for...in loop</td></tr>
+<tr><td><code>instanceof</code></td><td>Check an object's prototype chain</td></tr>
+<tr><td><code>new</code></td><td>Create an instance</td></tr>
+<tr><td><code>null</code></td><td>Intentional "no value" literal</td></tr>
+<tr><td><code>return</code></td><td>Return a value from a function</td></tr>
+<tr><td><code>super</code></td><td>Call the parent class</td></tr>
+<tr><td><code>switch</code></td><td>Multi-way branch</td></tr>
+<tr><td><code>this</code></td><td>Current execution context</td></tr>
+<tr><td><code>throw</code></td><td>Throw an error</td></tr>
+<tr><td><code>true</code></td><td>Boolean literal</td></tr>
+<tr><td><code>try</code></td><td>Start an error-handling block</td></tr>
+<tr><td><code>typeof</code></td><td>Get a value's type as a string</td></tr>
+<tr><td><code>var</code></td><td>Declare a function-scoped variable</td></tr>
+<tr><td><code>void</code></td><td>Evaluate an expression and return undefined</td></tr>
+<tr><td><code>while</code></td><td>Loop while a condition is true</td></tr>
+<tr><td><code>with</code></td><td>Extend scope (not allowed in strict mode)</td></tr>
+</table>
+
+<h2>2. Reserved only in strict mode</h2>
+<ul>
+<li><code>let</code>: declare a block-scoped variable</li>
+<li><code>static</code>: static class member</li>
+<li><code>yield</code>: pause a generator function</li>
+<li><code>implements</code>, <code>interface</code>, <code>package</code>, <code>private</code>, <code>protected</code>, <code>public</code>: reserved for future use</li>
+</ul>
+
+<h2>3. Context-dependent keywords</h2>
+<p class="note">These act as keywords only in certain places, so they can still be used as names elsewhere.</p>
+<ul>
+<li><code>await</code>: wait for a Promise (reserved inside modules and async functions)</li>
+<li><code>async</code>: declare an async function</li>
+<li><code>of</code>: used in for...of loops</li>
+<li><code>get</code> / <code>set</code>: define property getters and setters</li>
+<li><code>as</code> / <code>from</code>: used in import and export statements</li>
+<li><code>arguments</code> / <code>eval</code>: can't be assigned to in strict mode</li>
+</ul>
+
+<h2>4. Future reserved word (always)</h2>
+<ul>
+<li><code>enum</code></li>
+</ul>
+
+<h2>5. Old reserved words (ES1–ES3, no longer reserved)</h2>
+<p class="note">Avoid these anyway to keep code compatible with old engines.</p>
+<p><code>abstract</code> <code>boolean</code> <code>byte</code> <code>char</code> <code>double</code> <code>final</code> <code>float</code> <code>goto</code> <code>int</code> <code>long</code> <code>native</code> <code>short</code> <code>synchronized</code> <code>throws</code> <code>transient</code> <code>volatile</code></p>
+
+<h2>6. Special values (globals, not keywords)</h2>
+<ul>
+<li><code>undefined</code>, <code>NaN</code>, <code>Infinity</code>: global properties. They aren't keywords, but don't redefine them.</li>
+</ul>
+</body>
+</html>
