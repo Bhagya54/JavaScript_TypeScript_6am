@@ -20,7 +20,8 @@ node chapter_01_Basics/03_JS_Verify_Setup.js
 | [chapter_02_JavaScriptBasics](chapter_02_JavaScriptBasics/) | Identifiers, literals, operators, statements |
 | [chapter_03_Identifier_Literals](chapter_03_Identifier_Literals/) | Identifier rules, naming conventions, comments, keywords |
 | [chapter_04_Var_Let_Const_Scope](chapter_04_Var_Let_Const_Scope/) | `var` / `let` / `const`, function vs block scope, hoisting, TDZ |
-| [chapter_05_Literal](chapter_05_Literal/) | Literals, `typeof`, `null` vs `undefined` |
+| [chapter_05_Literal](chapter_05_Literal/) | Literals, `typeof`, `null` vs `undefined`, number literals, string literals, template literals |
+| [chapter_06_Operators](chapter_06_Operators/) | Assignment, arithmetic, modulus, exponentiation, compound assignment, comparison |
 
 ### chapter_01_Basics
 
@@ -55,6 +56,20 @@ node chapter_01_Basics/03_JS_Verify_Setup.js
 
 - `22_Literals.js` — Literal types and `typeof`
 - `23_nullVsUndefined.js` — Differences between `null` and `undefined`
+- `24_null.js` — `typeof` of `null`, `undefined`, and empty string
+- `25_Literal_Number.js` / `26_Literal_number_all.js` — Number literals: integer, float, exponential, hex, octal, binary, numeric separators, BigInt, `Infinity` / `NaN`, number limits
+- `27_string_literal.js` — Single vs double quoted strings and escaping quotes
+- `28_Template_Literal.js` — Template literals with `${}` for API URLs, locators, and logs
+- `29_backtick_double_single.js` — Backtick vs single vs double quotes: interpolation, expressions, multi-line strings
+
+### chapter_06_Operators
+
+- `30_Assignment_Operator.js` — Assignment with `=`
+- `31_Arithmetic_Operator.js` — `+`, `-`, `*`, `/`, `%`
+- `32_Modulus.js` — Remainder with `%` and even/odd check
+- `33_Exponential.js` — Exponentiation with `**`
+- `34_Compound_Operator.js` — `+=`, `-=`, `*=`, `/=`, `%=`
+- `35_Comparision_Operator.js` — `<`, `>=`, `<=`
 
 ## Running
 
