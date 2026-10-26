@@ -21,7 +21,7 @@ node chapter_01_Basics/03_JS_Verify_Setup.js
 | [chapter_03_Identifier_Literals](chapter_03_Identifier_Literals/) | Identifier rules, naming conventions, comments, keywords |
 | [chapter_04_Var_Let_Const_Scope](chapter_04_Var_Let_Const_Scope/) | `var` / `let` / `const`, function vs block scope, hoisting, TDZ |
 | [chapter_05_Literal](chapter_05_Literal/) | Literals, `typeof`, `null` vs `undefined`, number literals, string literals, template literals |
-| [chapter_06_Operators](chapter_06_Operators/) | Assignment, arithmetic, modulus, exponentiation, compound assignment, comparison |
+| [chapter_06_Operators](chapter_06_Operators/) | Assignment, arithmetic, modulus, exponentiation, compound assignment, comparison, loose vs strict equality, logical, string concatenation, ternary, `typeof` |
 
 ### chapter_01_Basics
 
@@ -70,6 +70,12 @@ node chapter_01_Basics/03_JS_Verify_Setup.js
 - `33_Exponential.js` — Exponentiation with `**`
 - `34_Compound_Operator.js` — `+=`, `-=`, `*=`, `/=`, `%=`
 - `35_Comparision_Operator.js` — `<`, `>=`, `<=`
+- `36_Comparision_Strrict_Loose.js` / `37_Loose_Strict.js` — Loose (`==`, `!=`) vs strict (`===`, `!==`) equality, type coercion, `null` / `undefined`
+- `38_Confusing_Cases.js` — `NaN`, `+0` / `-0`, array-to-primitive coercion gotchas
+- `39_Logical_Operator.js` — `&&`, `||`, `!`
+- `40_String_Concatenation_Operator.js` — String concatenation with `+=`
+- `41_Ternary_Operator.js` — `condition ? a : b` (age check, status code PASS/FAIL, base URL by environment)
+- `42_Typeof_Operator.js` — `typeof` on strings, numbers, booleans, `null`, `undefined`, arrays
 
 ## Running
 
