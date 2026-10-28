@@ -76,6 +76,11 @@ node chapter_01_Basics/03_JS_Verify_Setup.js
 - `40_String_Concatenation_Operator.js` — String concatenation with `+=`
 - `41_Ternary_Operator.js` — `condition ? a : b` (age check, status code PASS/FAIL, base URL by environment)
 - `42_Typeof_Operator.js` — `typeof` on strings, numbers, booleans, `null`, `undefined`, arrays
+- `43_Nullish_Operator.js` — Nullish coalescing `??` for default values
+- `44_Pre_Increment_Decrement.js` — Pre-increment `++a` (increment, then use)
+- `45_Post_Increment.js` — Post-increment `a++` (use, then increment)
+- `46_IQ.js` / `47_IQ.js` — Interview questions on pre/post increment evaluation order
+- `Task1.js` — Practice: mixed `++` / `--` expression
 
 ## Running
 
