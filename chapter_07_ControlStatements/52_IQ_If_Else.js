@@ -1,0 +1,15 @@
+if ("Hello") console.log("String is truthy")
+if (-12) console.log("Number is truthy")
+if ({}) console.log("Empty Object is truthy")
+if ([]) console.log("Empty array is truthy")
+if ("0") console.log("String 0 is also truthy")
+
+if ("") console.log("Empty string")
+if ('') console.log("Empty string")
+if (0) console.log("zero")
+if (-0) console.log("Negitive Zero")  
+if (NaN) console.log("NaN") //Not a Number  - type - number 
+if (null) console.log("null")    
+if (undefined) console.log("undefined")    
+if (undefined) console.log("undefined")    
+if (false) console.log("false")    
