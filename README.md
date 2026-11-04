@@ -22,6 +22,8 @@ node chapter_01_Basics/03_JS_Verify_Setup.js
 | [chapter_04_Var_Let_Const_Scope](chapter_04_Var_Let_Const_Scope/) | `var` / `let` / `const`, function vs block scope, hoisting, TDZ |
 | [chapter_05_Literal](chapter_05_Literal/) | Literals, `typeof`, `null` vs `undefined`, number literals, string literals, template literals |
 | [chapter_06_Operators](chapter_06_Operators/) | Assignment, arithmetic, modulus, exponentiation, compound assignment, comparison, loose vs strict equality, logical, string concatenation, ternary, `typeof` |
+| [chapter_07_ControlStatements](chapter_07_ControlStatements/) | `if` / `else if` / `else`, nested conditions, truthy / falsy, even/odd, grade calculator, leap year |
+| [chapter_08_Loops](chapter_08_Loops/) | `for`, `while`, `do-while`, retry pattern, `break` / `continue` |
 
 ### chapter_01_Basics
 
@@ -81,6 +83,28 @@ node chapter_01_Basics/03_JS_Verify_Setup.js
 - `45_Post_Increment.js` — Post-increment `a++` (use, then increment)
 - `46_IQ.js` / `47_IQ.js` — Interview questions on pre/post increment evaluation order
 - `Task1.js` — Practice: mixed `++` / `--` expression
+
+### chapter_07_ControlStatements
+
+- `48_If_Else.js` — Basic `if` / `else` (voting age)
+- `49_If_ElseIf_Else.js` / `57_Grade_Calculator.js` — `if` / `else if` / `else` chain for grades
+- `50_Real_If_Else.js` — Nested `if` with login state and user role
+- `51_API_If_Else.js` — Branch on API status code
+- `52_IQ_If_Else.js` — Truthy and falsy values
+- `53_Real_If_Else.js` — Login check combining `&&` with `if` / `else`
+- `54_IQ.js` / `55_IQ.js` — Braceless `if` / `else`, `else` needs an `if`
+- `56_Even_Odd.js` — Even/odd check with `%`
+- `58_LeapYear.js` — Leap year rule using `&&` / `||`
+
+### chapter_08_Loops
+
+- `59_For_Loop.js` — `for` loop counting up and down, custom step
+- `60_IQ.js` — `for` loop edge cases (never runs, infinite, `break`)
+- `61_While.js` — `while` loop
+- `62_Do_While.js` — `do-while` runs at least once, vs `while`
+- `63_Do_Retry.js` — Retry pattern with `do-while`
+- `64_IQ.js` / `65_IQ.js` — `while` vs `do-while` countdown questions
+- `66_IQ.js` — `break` vs `continue`
 
 ## Running
 
