@@ -24,6 +24,7 @@ node chapter_01_Basics/03_JS_Verify_Setup.js
 | [chapter_06_Operators](chapter_06_Operators/) | Assignment, arithmetic, modulus, exponentiation, compound assignment, comparison, loose vs strict equality, logical, string concatenation, ternary, `typeof` |
 | [chapter_07_ControlStatements](chapter_07_ControlStatements/) | `if` / `else if` / `else`, nested conditions, truthy / falsy, even/odd, grade calculator, leap year |
 | [chapter_08_Loops](chapter_08_Loops/) | `for`, `while`, `do-while`, retry pattern, `break` / `continue` |
+| [chapter_09_Arrays](chapter_09_Arrays/) | Array creation, index access, `at()`, `push` / `pop` / `unshift` / `shift` |
 
 ### chapter_01_Basics
 
@@ -105,6 +106,13 @@ node chapter_01_Basics/03_JS_Verify_Setup.js
 - `63_Do_Retry.js` — Retry pattern with `do-while`
 - `64_IQ.js` / `65_IQ.js` — `while` vs `do-while` countdown questions
 - `66_IQ.js` — `break` vs `continue`
+
+### chapter_09_Arrays
+
+- `67_Arrays.js` — Array literals, indexing, out-of-range `undefined`, mixed types
+- `68_Create_Array.js` — Create arrays: literal, `new Array()`, `Array.of()`
+- `69_Access_Array.js` — Access with `[]` and `at()` (negative index), update by index
+- `70_Add_Remove_Array.js` — `push` / `pop` at the end, `unshift` / `shift` at the start
 
 ## Running
 
