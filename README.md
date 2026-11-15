@@ -24,7 +24,7 @@ node chapter_01_Basics/03_JS_Verify_Setup.js
 | [chapter_06_Operators](chapter_06_Operators/) | Assignment, arithmetic, modulus, exponentiation, compound assignment, comparison, loose vs strict equality, logical, string concatenation, ternary, `typeof` |
 | [chapter_07_ControlStatements](chapter_07_ControlStatements/) | `if` / `else if` / `else`, nested conditions, truthy / falsy, even/odd, grade calculator, leap year |
 | [chapter_08_Loops](chapter_08_Loops/) | `for`, `while`, `do-while`, retry pattern, `break` / `continue` |
-| [chapter_09_Arrays](chapter_09_Arrays/) | Array creation, index access, `at()`, `push` / `pop` / `unshift` / `shift`, `splice`, search, iteration |
+| [chapter_09_Arrays](chapter_09_Arrays/) | Array creation, index access, `at()`, `push` / `pop` / `unshift` / `shift`, `splice`, `slice`, `concat`, search, iteration, sort |
 
 ### chapter_01_Basics
 
@@ -117,6 +117,12 @@ node chapter_01_Basics/03_JS_Verify_Setup.js
 - `72_Real_Example.js` — Browser list: add, remove, replace with `pop` / `push` / `splice`
 - `73_Search_Array.js` — `includes`, `indexOf`, `lastIndexOf`, `find`, `findIndex`, `findLastIndex`
 - `74_Iterate_Array.js` — Iterate with `for`, `for..of`, `for..in`, `forEach`
+- `75_Transform_Array.js` — Transform arrays (`map` etc.)
+- `76_Sort_Array.js` — Sort arrays
+- `77_Slice_Array.js` — `slice(start, end)` copy a range, end excluded
+- `78_SpliceVsSlice.js` — `splice` mutates, `slice` returns a copy
+- `79_Array_concat.js` — Merge arrays with `concat()` and spread `...`
+- `80_Array_Checking.js` — `Array.isArray`, `every`, `some`
 
 ## Running
 
