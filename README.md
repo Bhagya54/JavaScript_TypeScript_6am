@@ -25,6 +25,7 @@ node chapter_01_Basics/03_JS_Verify_Setup.js
 | [chapter_07_ControlStatements](chapter_07_ControlStatements/) | `if` / `else if` / `else`, nested conditions, truthy / falsy, even/odd, grade calculator, leap year |
 | [chapter_08_Loops](chapter_08_Loops/) | `for`, `while`, `do-while`, retry pattern, `break` / `continue` |
 | [chapter_09_Arrays](chapter_09_Arrays/) | Array creation, index access, `at()`, `push` / `pop` / `unshift` / `shift`, `splice`, `slice`, `concat`, search, iteration, sort |
+| [chapter_10_Functions](chapter_10_Functions/) | Function basics, 4 types (return / parameters), template literals, function expressions, arrow functions, default parameters |
 
 ### chapter_01_Basics
 
@@ -123,6 +124,20 @@ node chapter_01_Basics/03_JS_Verify_Setup.js
 - `78_SpliceVsSlice.js` — `splice` mutates, `slice` returns a copy
 - `79_Array_concat.js` — Merge arrays with `concat()` and spread `...`
 - `80_Array_Checking.js` — `Array.isArray`, `every`, `some`
+
+### chapter_10_Functions
+
+- `81_Functions.js` — Function basics
+- `82_Type1_NoReturnType_NoParameters.js` — No return, no parameters
+- `83_Type2_NoReturnType_WithParameters.js` — No return, with parameters
+- `84_Type3_WithReturnType_NoParamters.js` — With return, no parameters
+- `85_Type4_WithReturnType_WithParameters.js` — With return, with parameters
+- `86_Template_Literal.js` — Template literals in functions
+- `87_Function_Expression.js` — Function expressions
+- `88_Arrow_Fn.js` — Arrow functions
+- `89_Arrow_Function_MultipleLines.js` — Multi-line arrow functions
+- `90_Default_Values_Fn.js` — Default parameter values
+- `91_IQ.js`, `92_IQ.js` — Interview questions: `runTest` return values
 
 ## Running
 
