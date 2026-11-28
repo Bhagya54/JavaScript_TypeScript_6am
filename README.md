@@ -25,7 +25,8 @@ node chapter_01_Basics/03_JS_Verify_Setup.js
 | [chapter_07_ControlStatements](chapter_07_ControlStatements/) | `if` / `else if` / `else`, nested conditions, truthy / falsy, even/odd, grade calculator, leap year |
 | [chapter_08_Loops](chapter_08_Loops/) | `for`, `while`, `do-while`, retry pattern, `break` / `continue` |
 | [chapter_09_Arrays](chapter_09_Arrays/) | Array creation, index access, `at()`, `push` / `pop` / `unshift` / `shift`, `splice`, `slice`, `concat`, search, iteration, sort |
-| [chapter_10_Functions](chapter_10_Functions/) | Function basics, 4 types (return / parameters), template literals, function expressions, arrow functions, default parameters |
+| [chapter_10_Functions](chapter_10_Functions/) | Function basics, 4 types (return / parameters), template literals, function expressions, arrow functions, default parameters, rest / spread, scope, higher-order functions |
+| [chapter_11_Strings](chapter_11_Strings/) | Quotes, template literals, `length`, `charAt`, search methods, `substring` vs `slice` |
 
 ### chapter_01_Basics
 
@@ -138,6 +139,20 @@ node chapter_01_Basics/03_JS_Verify_Setup.js
 - `89_Arrow_Function_MultipleLines.js` — Multi-line arrow functions
 - `90_Default_Values_Fn.js` — Default parameter values
 - `91_IQ.js`, `92_IQ.js` — Interview questions: `runTest` return values
+- `93_WaysOfFn.js` — Normal fn vs function expression vs arrow fn
+- `94_Rest_Parameter.js` — Rest parameter `...args`
+- `95_Spread_Arguments.js` — Spread array into arguments
+- `96_IQ.js` — Interview questions: implicit `undefined` return, hoisting
+- `97_Scope_Fn.js` — Global vs local scope
+- `98_Higher_Order_Fn.js` — Pass a function as an argument
+- `NormalFnVsFnExpVsArrowFn.html` — Visual comparison of the three function styles
+
+### chapter_11_Strings
+
+- `99_String.js` — Quotes, template literals, multi-line strings, `String()`
+- `100_String_Properties.js` — `length`, `charAt`, `charCodeAt`
+- `101_Search_String.js` — `includes`, `startsWith`, `endsWith`, `indexOf`, `lastIndexOf`, `search`
+- `102_SubString.js` — `substring` vs `slice` (negative index, swapped args)
 
 ## Running
 

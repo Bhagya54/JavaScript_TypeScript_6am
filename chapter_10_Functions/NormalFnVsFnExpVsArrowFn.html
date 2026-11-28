@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Normal vs Expression vs Arrow Fn</title>
+<style>
+  body{font-family:system-ui,sans-serif;background:#fffbe8;color:#222;margin:0;padding:16px}
+  h1{text-align:center;font-size:2rem}
+  .sub{text-align:center;margin-bottom:20px;font-size:1.1rem}
+  .wrap{overflow-x:auto;max-width:1000px;margin:auto}
+  table{border-collapse:collapse;width:100%;background:#fff;border-radius:12px;overflow:hidden;box-shadow:0 4px 12px #0002}
+  th,td{padding:12px;border:1px solid #eee;text-align:left;vertical-align:top}
+  th{font-size:1.1rem;color:#fff}
+  th:nth-child(1){background:#555}
+  th:nth-child(2){background:#e8590c}
+  th:nth-child(3){background:#1c7ed6}
+  th:nth-child(4){background:#2f9e44}
+  td:first-child{font-weight:bold;background:#f6f6f6}
+  code{background:#f1f3f5;padding:2px 5px;border-radius:4px;font-size:.9em}
+  pre{background:#212529;color:#e9ecef;padding:12px;border-radius:8px;overflow-x:auto;margin:0}
+  .yes{color:#2f9e44;font-weight:bold}.no{color:#e03131;font-weight:bold}
+  .cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:14px;max-width:1000px;margin:24px auto}
+  .card{background:#fff;border-radius:12px;padding:14px;box-shadow:0 4px 12px #0002}
+  .card h3{margin-top:0}
+  .big{font-size:2.5rem}
+</style>
+</head>
+<body>
+<h1>3 Ways to Make a Function</h1>
+<p class="sub">Same job: a little box that does work when you call it. 📦</p>
+
+<div class="cards">
+  <div class="card"><div class="big">🏠</div><h3>Normal (Declaration)</h3>
+<pre>function add(a, b) {
+  return a + b;
+}</pre></div>
+  <div class="card"><div class="big">🎁</div><h3>Function Expression</h3>
+<pre>const add = function (a, b) {
+  return a + b;
+};</pre></div>
+  <div class="card"><div class="big">🏹</div><h3>Arrow Function</h3>
+<pre>const add = (a, b) =&gt; a + b;</pre></div>
+</div>
+
+<div class="wrap">
+<table>
+  <thead>
+    <tr><th>Question</th><th>🏠 Normal</th><th>🎁 Expression</th><th>🏹 Arrow</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>Syntax</td><td><code>function f(){}</code></td><td><code>const f = function(){}</code></td><td><code>const f = () =&gt; {}</code></td></tr>
+    <tr><td>Has a name?</td><td class="yes">Always</td><td>Optional (can be anonymous)</td><td>Always anonymous (name comes from the variable)</td></tr>
+    <tr><td>Hoisting (call before it's written?)</td><td class="yes">Yes ✅ works</td><td class="no">No ❌ error (<code>const</code>/<code>let</code> in TDZ; <code>var</code> gives undefined)</td><td class="no">No ❌ same as expression</td></tr>
+    <tr><td><code>this</code></td><td>Its own <code>this</code> (depends on how it's called)</td><td>Its own <code>this</code> (depends on how it's called)</td><td>No own <code>this</code> — borrows from the surrounding code</td></tr>
+    <tr><td><code>arguments</code> object</td><td class="yes">Yes</td><td class="yes">Yes</td><td class="no">No (use <code>...rest</code>)</td></tr>
+    <tr><td>Use with <code>new</code> (constructor)</td><td class="yes">Yes</td><td class="yes">Yes</td><td class="no">No — TypeError</td></tr>
+    <tr><td><code>prototype</code> property</td><td class="yes">Yes</td><td class="yes">Yes</td><td class="no">No</td></tr>
+    <tr><td>Implicit return</td><td class="no">No, need <code>return</code></td><td class="no">No, need <code>return</code></td><td class="yes">Yes: <code>x =&gt; x * 2</code></td></tr>
+    <tr><td>Can be a generator (<code>function*</code>)</td><td class="yes">Yes</td><td class="yes">Yes</td><td class="no">No</td></tr>
+    <tr><td>Can be passed as a value / callback</td><td>Yes</td><td>Yes</td><td>Yes (very common)</td></tr>
+    <tr><td>Can run itself (IIFE)</td><td>Needs wrapping in <code>( )</code></td><td><code>(function(){})()</code></td><td><code>(() =&gt; {})()</code></td></tr>
+    <tr><td>Best for</td><td>Main, reusable functions; called anywhere in file</td><td>Storing in variables, conditional definitions</td><td>Short callbacks (<code>map</code>, <code>filter</code>), keeping outer <code>this</code></td></tr>
+  </tbody>
+</table>
+</div>
+
+<div class="cards">
+  <div class="card"><div class="big">⬆️</div><h3>Hoisting demo</h3>
+<pre>hello();      // ✅ "hi"
+function hello(){ console.log("hi"); }
+
+bye();        // ❌ ReferenceError
+const bye = () =&gt; console.log("bye");</pre></div>
+  <div class="card"><div class="big">👉</div><h3><code>this</code> demo</h3>
+<pre>const p = {
+  n: "Sam",
+  a: function(){ return this.n; }, // "Sam"
+  b: () =&gt; this.n                  // undefined
+};</pre></div>
+</div>
+</body>
+</html>

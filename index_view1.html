@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Index view of the string "Hello, World"</title>
+<style>
+  body { font: 16px/1.6 system-ui, -apple-system, Segoe UI, sans-serif;
+         max-width: 820px; margin: 2rem auto; padding: 0 1rem; color: #1a1a1a; }
+  h1 { font-size: 1.4rem; border-bottom: 2px solid #eee; padding-bottom: .4rem; }
+  pre { background: #f6f8fa; padding: 1rem; border-radius: 6px; overflow-x: auto; }
+  code { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; }
+  table { border-collapse: collapse; width: 100%; text-align: center; }
+  th, td { border: 1px solid #ddd; padding: .5rem .75rem; }
+  th { background: #f6f8fa; text-align: left; }
+  .hl { background: #fff3b0; font-weight: bold; }
+</style>
+</head>
+<body>
+<h1>Index view of the string "Hello, World"</h1>
+<pre><code>let str = "Hello, World"
+console.log(str.length)   // 12</code></pre>
+<table>
+<tr><th>Index</th><td>0</td><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td><td>7</td><td>8</td><td>9</td><td>10</td><td>11</td></tr>
+<tr><th>Char</th><td class="hl">H</td><td>e</td><td>l</td><td>l</td><td>o</td><td>,</td><td>(space)</td><td>W</td><td>o</td><td>r</td><td>l</td><td>d</td></tr>
+<tr><th>Code</th><td>72</td><td>101</td><td>108</td><td>108</td><td>111</td><td>44</td><td>32</td><td>87</td><td>111</td><td>114</td><td>108</td><td>100</td></tr>
+<tr><th>Negative</th><td>-12</td><td>-11</td><td>-10</td><td>-9</td><td>-8</td><td>-7</td><td>-6</td><td>-5</td><td>-4</td><td>-3</td><td>-2</td><td>-1</td></tr>
+</table>
+<p>Indexes start at 0 and end at <code>length - 1</code> (11). <code>str[0]</code> / <code>str.charAt(0)</code> is <code>"H"</code>. The negative row is for <code>str.at(-1)</code> (<code>"d"</code>); bracket and <code>charAt</code> do not accept negatives.</p>
+</body>
+</html>

@@ -1,4 +1,4 @@
-let arrA = [19, 23, 45, 67, 23, 80, 45]
+let arrA = [19, 23, 45, 67, 23, 80, 45, 23, 48, 11]
 //includes - true/false - Determines whether an array includes a certain element, returning true or false as appropriate.
 console.log(arrA.includes(45))
 console.log(arrA.includes(450))
@@ -20,6 +20,7 @@ function sum(a, b) {
 
 //find - Returns the value of the first element in the array where predicate is true, and undefined otherwise.
 console.log(arrA.find(x => x > 40))//45
+console.log(arrA.findLast(x => x > 40))//89
 console.log(arrA.find(y => y < 10))//undefined
 
 //findIndex- Returns the index of the first element in the array where predicate is true, and -1 otherwise.

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Index view of the URL string</title>
+<style>
+  body { font: 16px/1.6 system-ui, -apple-system, Segoe UI, sans-serif; margin: 2rem 1rem; color: #1a1a1a; }
+  h1 { font-size: 1.4rem; border-bottom: 2px solid #eee; padding-bottom: .4rem; }
+  pre { background: #f6f8fa; padding: 1rem; border-radius: 6px; overflow-x: auto; }
+  code { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; }
+  .wrap { overflow-x: auto; }
+  table { border-collapse: collapse; text-align: center; font-size: 13px; }
+  th, td { border: 1px solid #ddd; padding: .3rem .5rem; }
+  th { background: #f6f8fa; text-align: left; position: sticky; left: 0; }
+  .hl { background: #fff3b0; font-weight: bold; }
+</style>
+</head>
+<body>
+<h1>Index view of the URL string</h1>
+<pre><code>let url = "https://staging.vwo.com/api/login?locked=false&amp;retry=false"
+console.log(url.length)   // 58</code></pre>
+<div class="wrap"><table>
+<tr><th>Index</th><td>0</td><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td><td>7</td><td>8</td><td>9</td><td>10</td><td>11</td><td>12</td><td>13</td><td>14</td><td>15</td><td>16</td><td>17</td><td>18</td><td>19</td><td>20</td><td>21</td><td>22</td><td>23</td><td>24</td><td>25</td><td>26</td><td>27</td><td>28</td><td>29</td><td>30</td><td>31</td><td>32</td><td>33</td><td>34</td><td>35</td><td>36</td><td>37</td><td>38</td><td>39</td><td>40</td><td>41</td><td>42</td><td>43</td><td>44</td><td>45</td><td>46</td><td>47</td><td>48</td><td>49</td><td>50</td><td>51</td><td>52</td><td>53</td><td>54</td><td>55</td><td>56</td><td>57</td></tr>
+<tr><th>Char</th><td>h</td><td>t</td><td>t</td><td>p</td><td>s</td><td class="hl">:</td><td>/</td><td>/</td><td>s</td><td>t</td><td>a</td><td>g</td><td>i</td><td>n</td><td>g</td><td>.</td><td>v</td><td>w</td><td>o</td><td>.</td><td>c</td><td>o</td><td>m</td><td>/</td><td>a</td><td>p</td><td>i</td><td>/</td><td>l</td><td>o</td><td>g</td><td>i</td><td>n</td><td class="hl">?</td><td>l</td><td>o</td><td>c</td><td>k</td><td>e</td><td>d</td><td>=</td><td>f</td><td>a</td><td>l</td><td>s</td><td>e</td><td class="hl">&amp;</td><td>r</td><td>e</td><td>t</td><td>r</td><td>y</td><td>=</td><td>f</td><td>a</td><td>l</td><td>s</td><td>e</td></tr>
+<tr><th>Negative</th><td>-58</td><td>-57</td><td>-56</td><td>-55</td><td>-54</td><td>-53</td><td>-52</td><td>-51</td><td>-50</td><td>-49</td><td>-48</td><td>-47</td><td>-46</td><td>-45</td><td>-44</td><td>-43</td><td>-42</td><td>-41</td><td>-40</td><td>-39</td><td>-38</td><td>-37</td><td>-36</td><td>-35</td><td>-34</td><td>-33</td><td>-32</td><td>-31</td><td>-30</td><td>-29</td><td>-28</td><td>-27</td><td>-26</td><td>-25</td><td>-24</td><td>-23</td><td>-22</td><td>-21</td><td>-20</td><td>-19</td><td>-18</td><td>-17</td><td>-16</td><td>-15</td><td>-14</td><td>-13</td><td>-12</td><td>-11</td><td>-10</td><td>-9</td><td>-8</td><td>-7</td><td>-6</td><td>-5</td><td>-4</td><td>-3</td><td>-2</td><td>-1</td></tr>
+</table></div>
+<p>Length <code>58</code>, indexes <code>0</code> to <code>57</code>. Highlighted: <code>:</code> at 5 (end of scheme), <code>?</code> at 33 (query start), <code>&amp;</code> at 46 (param separator).</p>
+<p><code>url.indexOf("?")</code> → 33; <code>url.indexOf("login")</code> → 28; <code>url.indexOf("retry")</code> → 47.</p>
+</body>
+</html>
